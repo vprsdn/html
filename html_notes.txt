@@ -1,0 +1,9 @@
+doctype:
+{
+
+}
+
+Head:
+{
+	-	This includes the keywords and a page description that would appear in search results, css styles, favicon, author, etc.
+}
