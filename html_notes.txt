@@ -6,4 +6,62 @@ doctype:
 Head:
 {
 	-	This includes the keywords and a page description that would appear in search results, css styles, favicon, author, etc.
+
+	-	Meta attributes:
+	{
+		-	charset: specifies the character set that the document is permitted to use. utf-8 can handle/display pretty much any human language.
+
+		-	Open graph properties, invented by facebook, helps in providing a richer metadata for websites. These properties are useful while sharing links on social sites like facebook. When shared it shows an image along with description for better experience.
+			-	https://ogp.me/
+
+		-	Twitter has similar metadata properties called "Twitter Cards"
+			-	https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
+		
+		-	
+	}
+
+	-	Favicon:
+	{
+		-	<link rel="icon" href="favicon.ico" type="image/x-icon" />
+		-	Different rel values can be used for displaying different size favicons based on device type.
+	}
+
+	-	Stylesheet:
+	{
+		-	External style sheet is added with rel="stylesheet" property.
+		-	<link rel="stylesheet" href="my-css-file.css" />
+	}
+
+	-	JS:
+	{
+		-	External JS file is added to the html with script tag.
+		-	<script src="my-js-file.js" defer></script>
+		-	"defer" instructs the browser to load the JavaScript after the page has finished parsing the HTML.
+	}
+
+	-	Language:
+	{
+		-	Primary language can be set to the document by adding lang attribute to the html tag.
+			-	<html lang="en-US">
+		-	This is useful for displaying language specific search results and for screen readers.
+		-	Language can be added to certain sub sections of the body.
+			-	<p>Japanese example: <span lang="ja">ご飯が熱い。</span>.</p>
+	}
+}
+
+Text:
+{
+	-	Use em to emphasis importance on certain words. This puts emphasis and displays the words in italics.
+	-	To just italicize the words, use span with css or <i>
+
+	-	Similarly for strong importance, use <strong>.
+	-	To make it just "look" bold, use span with css or <b>
+}
+
+SEO:
+{
+	-	Proper headings and meta tags are important for good SEO ranking.
+	-	Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO.
+	-	Use semantic elements (em, strong) over presentation elements (i, b) for better SEO.
+	-	
 }
