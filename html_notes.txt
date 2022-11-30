@@ -130,6 +130,12 @@ Text:
 		<kbd>: For marking up keyboard (and other types of) input entered into the computer.
 		<samp>: For marking up the output of a computer program.
 	}
+
+	-	Times and dates:
+	{
+		-	<time datetime="2016-01-20">20 January 2016</time>
+		-	This is used to signify the time and date in a machine readable format.
+	}
 }
 
 SEO:
