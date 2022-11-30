@@ -138,6 +138,28 @@ Text:
 	}
 }
 
+Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
+{
+	-	Semantic tags:
+	{
+		-	header
+		-	nav
+		-	main
+			-	article
+			-	section
+			-	aside
+		-	footer
+	}
+
+	-	Steps to structure a page:
+	{
+		-	List all the things that needs to be displayed.
+		-	Have a rough sketch of where these things go.
+		-	Group the elements based on their relationship.
+		-	Sketch a sitemap depicting the workflow.
+	}
+}
+
 SEO:
 {
 	-	Proper headings and meta tags are important for good SEO ranking.
