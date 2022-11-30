@@ -160,6 +160,13 @@ Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_H
 	}
 }
 
+Possible issues:
+{
+	-	Missing closing tags.
+	-	Bad nesting - jumbled closing tags.
+	-	Missing or improper attribute values.
+}
+
 SEO:
 {
 	-	Proper headings and meta tags are important for good SEO ranking.
