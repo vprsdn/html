@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Computer Code</title>
+		<style>
+			.tag_info{
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<h3>List of elements available to view text in code format.</h3>
+		<ul>
+			<li>
+				<span class="tag_name">"code" tag</span>
+				<blockquote><code>console.log("works great!");</code></blockquote>
+			</li>
+			<li>
+				<span class="tag_name">"var" tag</span>
+				<blockquote>This tag is used to represent variable names such as <var>isComplete</var>.</blockquote>
+			</li>
+			<li>
+				<span class="tag_name">"pre" tag</span>
+				<pre>
+					<code>// This is used to preserve the whitespace as intended.
+					const para = document.querySelector('p');
+					para.onclick = function() {
+						alert('Owww, stop poking me!');
+					}</code>
+				</pre>
+			</li>
+			<li>
+				<span class="tag_name">"kbd" tag</span>
+				<blockquote>Print something with <kbd>Ctrl</kbd>/<kbd>Cmd</kbd> + <kbd>P</kbd></blockquote>
+			</li>
+			<li>
+				<span class="tag_name">"samp" tag</span>
+				<blockquote>
+					<span class="tag_info">This is to display the output of a program.</span>
+					<code>console.log("Hello");</code>
+					<span class="tag_info">Output:</span>
+					<samp>Hello</samp>
+				</blockquote>
+			</li>
+		</ul>
+	</body>
+</html>

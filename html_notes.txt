@@ -106,10 +106,25 @@ Text:
 		}
 	}
 
-	-	Abbrevations:
+	-	Abbreviations:
 	{
+		-	Use <abbr>TBD</abbr> to denote that a particular word is an acronym or abbrevation.
+		-	Also use the title attribute to give expanded text in case of an acronym.
+		-	Useful for screen readers.
+	}
 
+	-	Contact details:
+	{
+		-	Contact information can be wrapped with <address></address> tag.
+		-	This could be address, phone number, email.
+		-	It can also be an anchor tag linking to a page which has the contact information related to the current page.
+		-	Only use it for the contact info that is related to the current page.
+		-	Should NOT be used while displaying a list of unrelated addresses.
+	}
 
+	-	Computer code:
+	{
+		
 	}
 }
 
