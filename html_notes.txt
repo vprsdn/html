@@ -1,6 +1,7 @@
 doctype:
 {
-
+	-	<!DOCTYPE html>
+	-	This is not an HTML tag. This is used by the browser to know what type of a document to expect.
 }
 
 Head:
@@ -16,8 +17,6 @@ Head:
 
 		-	Twitter has similar metadata properties called "Twitter Cards"
 			-	https://developer.twitter.com/en/docs/twitter-for-websites/cards/overview/abouts-cards
-		
-		-	
 	}
 
 	-	Favicon:
