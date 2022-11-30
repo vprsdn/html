@@ -56,6 +56,61 @@ Text:
 
 	-	Similarly for strong importance, use <strong>.
 	-	To make it just "look" bold, use span with css or <b>
+
+	-	anchor tag:
+	{
+		-	<a href="01index.html#section1" download="01index.html"><p class="bg">go to section1</p></a>
+
+		-	If a download tag is used, it ignores the href.
+
+		-	<a href="mailto:nowhere@mozilla.org">Send email to nowhere</a>
+		-	mailto: link indicates the email address of the intended recipient
+
+		-	<a href="mailto:nowhere@mozilla.org?cc=name2@rapidtables.com&bcc=name3@rapidtables.com&subject=The%20subject%20of%20the%20email&body=The%20body%20of%20the%20email">Send mail with cc, bcc, subject and body</a>
+		-	This can also include other info such as cc, bcc, subject, body.
+	}
+
+	-	Description list: <dl>...</dl>
+	{
+		-	List of terms and their definitions.
+		-	description term <dt>
+		-	description definition <dd>
+
+		-	Example:
+		{
+			<dl>
+				<dt>aside</dt>
+				<dd>
+					In drama, where a character shares a comment only with the audience for humorous or dramatic effect. This is usually a feeling, thought, or piece of additional background information.
+				</dd>
+				<dd>
+					In writing, a section of content that is related to the current topic, but doesn't fit directly into the main flow of content so is presented nearby (often in a box off to the side.)
+				</dd>
+			</dl>
+		}
+	}
+
+	-	Quotations:
+	{
+		-	blockquote:
+		{
+			-	Block level content.
+			-	<p>Kakashi said,<blockquote >I got lost in the path of life.</blockquote></p>
+			-	Keeps new row for the quote.
+		}
+
+		-	Inline quotations:
+		{
+			-	<p>Kakashi said, <q>I got lost in the path of life.</q></p>
+			-	Adds the quote inline to previous element.
+		}
+	}
+
+	-	Abbrevations:
+	{
+
+
+	}
 }
 
 SEO:
@@ -63,5 +118,5 @@ SEO:
 	-	Proper headings and meta tags are important for good SEO ranking.
 	-	Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO.
 	-	Use semantic elements (em, strong) over presentation elements (i, b) for better SEO.
-	-	
+	-	Title and meta description are important.
 }

@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html  lang="en-US">
+<html lang="en-US">
 	<head>
 		<meta charset="UTF-8" />
-		<meta name="author" content="John">
-		<meta name="description" content="This is a short description of this particular html page.">
+		<meta name="author" content="John" />
+		<meta name="description" content="This is a short description of this particular html page." />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>New Document</title>
@@ -12,9 +12,28 @@
 				font-size: 20px;
 				font-family: "Rubik";
 			}
+			.bg {
+				background-color: beige;
+			}
+			.fulll {
+				height: 100vh;
+				background-color: pink;
+				scroll-snap-align: start;
+				scroll-snap-type: y;
+			}
+			body {
+				display: flex;
+				overflow-x: auto;
+				flex-direction: column;
+				scroll-snap-type: y;
+			}
 		</style>
 	</head>
 	<body>
-		<p>Japanese example: ご飯が熱い。</p>
+		<a href="https://www.google.com"><p class="bg">test</p></a>
+		<a href="02links.html"><p class="bg">links page</p></a>
+
+		<h2 id="something1" class="fulll">something 1 - <a href="#something2">go to something 2</a></h2>
+		<h2 id="something2" class="fulll">something 2 - <a href="#something1">go to something 1</a></h2>
 	</body>
 </html>
