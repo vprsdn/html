@@ -137,6 +137,28 @@ Text:
 	}
 }
 
+Multimedia:
+{
+	Images:
+	{
+		-	Always host the images in the same place as the html or via a CDN.
+		-	Do not use links that are hosted by an external site.
+		-	Only host public domain or owned or permitted images.
+		-	Use an alt tag, useful for screen reader users.
+		-	If an image is used for decoration and not contributing to the content, use empty alt tag.
+
+		-	Wrap the image with <figure></figure> and add the img and figcaption tag in it.
+		-	Fig caption is always visible, so do not use the same text for alt and fig caption.
+
+		-	Figure tag can be used for several images, a code snippet, audio, video, equations, a table, or something else.
+
+		-	Background images:
+		{
+			-	These are for decoration only and do not work with screen readers.
+		}
+	}
+}
+
 Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
 {
 	-	Semantic tags:
