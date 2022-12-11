@@ -317,6 +317,23 @@ Multimedia and embedding:
 	}
 }
 
+Tables:
+{
+	-	Use caption tag right after the table opening.
+	-	colgroup can be used to style the entire columns as per the layout.
+	-	List the number of required "col"s inside colgroup and give required styles for each column.
+	-	The style can be spanned multiple columns with "span" attribute.
+
+	-	Below this comes the following:
+	{
+		-	thead: wraps the tr with column headers (th).
+		-	tbody: wraps the tr's with body content.
+		-	tfoot: wraps the last row with summary/sum of tbody content.
+	}
+
+	-	More here: https://developer.mozilla.org/en-US/docs/Learn/HTML/Tables/Advanced
+}
+
 Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
 {
 	-	Semantic tags:
@@ -353,4 +370,5 @@ SEO:
 	-	Use semantic elements (em, strong) over presentation elements (i, b) for better SEO.
 	-	Title and meta description are important.
 	-	Use track tag to give text content for audio and video.
+	-	Use caption tag inside tables.
 }
