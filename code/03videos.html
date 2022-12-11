@@ -7,10 +7,22 @@
 		<title>Videos</title>
 	</head>
 	<body>
-		<video src="./assets/video/rabbit320.webm" controls>
+		<h2>Single format</h2>
+		<video src="./assets/video/rabbit320.webm" controls autoplay muted preload="auto">
 			<p>
 				Your browser doesn't support HTML video. Here is a
 				<a href="./assets/video/rabbit320.webm">link to the video</a> instead.
+			</p>
+		</video>
+
+		<h2>Multiple formats</h2>
+		<video controls poster="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiPklyn_caAcyraM1n5YDWhhOMM10eT3AtUpxQHJ57CQ&s" loop width="400" height="400">
+			<source src="./assets/video/rabbit320.mp4" type="video/mp4" />
+			<source src="./assets/video/rabbit320.webm" type="video/webm" />
+			<track label="English" kind="subtitles" srclang="en" src="subtitle file here" default />
+			<p>
+				Your browser doesn't support HTML video. Here is a
+				<a href="./assets/video/rabbit320.mp4">link to the video</a> instead.
 			</p>
 		</video>
 	</body>

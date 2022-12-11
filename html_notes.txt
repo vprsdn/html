@@ -165,6 +165,21 @@ Multimedia:
 			-	This requires a src same as in img tag.
 			-	controls attribute to provide the media control to the user.
 			-	The content inside the video tag will be used as fallback content in case the browser does not support video tag.
+
+			-	Multiple formats:
+			{
+				-	Multiple formats can be provided by using source tag.
+				-	Remove the src from video tag and add source tags with "src" and "type" attribute inside the video tag.
+				-	If "type" isn't included, browsers will load and try to play each file until they find one that works, which obviously takes time and is an unnecessary use of resources.
+			}
+
+			-	preload:
+			{
+				-	Used for buffering large files; it can take one of three values:
+					-	"none" does not buffer the file
+					-	"auto" buffers the media file
+					-	"metadata" buffers only the metadata for the file
+			}
 		}
 	}
 }
