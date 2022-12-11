@@ -137,7 +137,7 @@ Text:
 	}
 }
 
-Multimedia:
+Multimedia and embedding:
 {
 	Images:
 	{
@@ -199,6 +199,21 @@ Multimedia:
 		}
 
 		Best practices: https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery
+	}
+
+	iframes:
+	{
+		-	Embed only your owned sites or sites with proper permissions.
+		-	Double ensure that the third party site is super secure.
+		-	Use HTTPS for the website"
+		{
+			-	HTTPS reduces the chance that remote content has been tampered with in transit,
+			-	HTTPS prevents embedded content from accessing content in your parent document, and vice versa.
+		}
+
+		-	Use the sandbox attribute with no params. If absolutely required pass the params one by one. https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe#attr-sandbox
+
+		-	Site can be prevented from embedding into iframe using the "X-Frame-Options" header set to DENY or SAMEORIGIN or specific urls - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 	}
 }
 
