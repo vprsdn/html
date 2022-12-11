@@ -188,6 +188,17 @@ Multimedia:
 			-	It also doesn't support the "poster" attribute — again, no visual component.
 			-	It supports the remaining attributes as the video tag.
 		}
+
+		captions/subtitles/description:
+		{
+			-	The subtitles file can be included for a video or audio with <track> tag.
+			-	<track> should be placed within <audio> or <video>, but after all <source> elements.
+			-	"kind" attribute to specify whether the cues are subtitles, captions, or descriptions.
+			-	"srclang" to tell the browser what language you have written the subtitles in.
+			-	"label" to set the text of the option for this subtitle language.
+		}
+
+		Best practices: https://developer.mozilla.org/en-US/docs/Web/Guide/Audio_and_video_delivery
 	}
 }
 
@@ -226,4 +237,5 @@ SEO:
 	-	Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO.
 	-	Use semantic elements (em, strong) over presentation elements (i, b) for better SEO.
 	-	Title and meta description are important.
+	-	Use track tag to give text content for audio and video.
 }
