@@ -181,6 +181,13 @@ Multimedia:
 					-	"metadata" buffers only the metadata for the file
 			}
 		}
+
+		audio:
+		{
+			-	The <audio> element doesn't support the "width"/"height" attributes as there is no visual component, so there is nothing to assign a width or height to.
+			-	It also doesn't support the "poster" attribute — again, no visual component.
+			-	It supports the remaining attributes as the video tag.
+		}
 	}
 }
 
