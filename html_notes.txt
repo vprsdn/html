@@ -171,6 +171,7 @@ Multimedia and embedding:
 				-	Multiple formats can be provided by using source tag.
 				-	Remove the src from video tag and add source tags with "src" and "type" attribute inside the video tag.
 				-	If "type" isn't included, browsers will load and try to play each file until they find one that works, which obviously takes time and is an unnecessary use of resources.
+				-	The source is picked up from top to bottom.
 			}
 
 			-	preload:
@@ -305,6 +306,14 @@ Multimedia and embedding:
 					-	Moreover, unless the SVG and your current webpage have the same origin, you cannot use JavaScript on your main webpage to manipulate the SVG.
 			}
 		}
+	}
+
+	Responsive images:
+	{
+		-	Use srcset and sizes attribute of img to provide different images for different screen sizes. (Did not work properly. Better to use the <picture> tag with multiple sources.)
+
+		-	Use picture tag with multiple sources for specific media width.
+		-	img tag is mandatory as default in this case.
 	}
 }
 

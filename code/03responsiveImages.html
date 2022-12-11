@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Responsive Images</title>
+		<style>
+			img {
+				width: 100%;
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <img src="./assets/images/desert.png" alt="Desert" /> -->
+
+		<!-- <img
+			srcset="./assets/images/desert.png 480px, ./assets/images/ghost2.jpg 800px"
+			sizes="(max-width: 600px) 480px, 800px"
+			src="./assets/images/desert.png"
+			alt="Elva dressed as a fairy"
+		/> -->
+
+		<!-- <img
+			srcset="./assets/images/desert.png, ./assets/images/ghost2.jpg 2x"
+			src="./assets/images/desert.png"
+			alt="Elva dressed as a fairy"
+		/> -->
+
+		<picture>
+			<source media="(max-width: 800px)" srcset="./assets/images/desert.png" />
+			<source media="(max-width: 1200px)" srcset="./assets/images/ghost2.jpg" />
+			<source media="(max-width: 4800px)" srcset="./assets/images/light_house.jpg" />
+			<img src="./assets/images/light_house.jpg" alt="Chris standing up holding his daughter Elva" />
+		</picture>
+	</body>
+</html>
