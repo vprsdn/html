@@ -215,6 +215,97 @@ Multimedia and embedding:
 
 		-	Site can be prevented from embedding into iframe using the "X-Frame-Options" header set to DENY or SAMEORIGIN or specific urls - https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/X-Frame-Options
 	}
+
+	SVG:
+	{
+		-	Raster images:
+		{
+			-	Are defined using a grid of pixels.
+			-	Contains information showing exactly where each pixel is to be placed, and exactly what color it should be.
+			-	Popular web raster formats include Bitmap (.bmp), PNG (.png), JPEG (.jpg), and GIF (.gif)
+			-	When it is zoomed, each pixel is increased in size to fill multiple pixels on screen, so the image starts to look blocky.
+		}
+
+		-	Vector images:
+		{
+			-	Are defined using algorithms.
+			-	Contains shape and path definitions that the computer can use to work out what the image should look like when rendered on the screen.
+			-	When zoomed in, the vector image continues to look nice and crisp, because no matter what size it is, the algorithms are used to work out the shapes in the image, with the values being scaled as it gets bigger.
+
+			-	Pros:
+				-	Text in vector images remains accessible (which also benefits your SEO).
+				-	SVGs lend themselves well to styling/scripting, because each component of the image is an element that can be styled via CSS or scripted via JavaScript.
+
+			-	Cons:
+				-	SVG can get complicated very quickly, meaning that file sizes can grow; complex SVGs can also take significant processing time in the browser.
+				-	SVG can be harder to create than raster images, depending on what kind of image you are trying to create.
+		}
+
+		-	Ways to include svg:
+		{
+			-	img:
+			{
+				-	<img
+						src="equilateral.svg"
+						alt="triangle with all three sides equal"
+						height="87"
+						width="100"
+					/>
+				
+				-	Pros
+					-	Quick, familiar image syntax with built-in text equivalent available in the alt attribute.
+					-	You can make the image into a hyperlink easily by nesting the <img> inside an <a> element.
+					-	The SVG file can be cached by the browser, resulting in faster loading times for any page that uses the image loaded in the future.
+
+				-	Cons
+					-	You cannot manipulate the image with JavaScript.
+					-	If you want to control the SVG content with CSS, you must include inline CSS styles in your SVG code. (External stylesheets invoked from the SVG file take no effect.)
+					-	You cannot restyle the image with CSS pseudoclasses (like :focus).
+				
+				-	Old browser support:
+				{
+					-	<img src="equilateral.png" alt="triangle with equal sides" srcset="equilateral.svg" />
+					-	Reference a PNG or JPG from your src attribute and use a srcset attribute (which only recent browsers recognize) to reference the SVG. This being the case, only supporting browsers will load the SVG — older browsers will load the PNG instead.
+
+					-	In CSS:
+					{
+						background: url("fallback.png") no-repeat center;
+						background-image: url("image.svg");
+						background-size: contain;
+
+						-	Older browsers will stick with the PNG that they understand, while newer browsers will load the SVG.
+					}
+				}
+			}
+
+			-	svg tag: SVG inline
+			{
+				Pros
+					-	Putting your SVG inline saves an HTTP request, and therefore can reduce a bit your loading time.
+					-	You can assign classes and ids to SVG elements and style them with CSS, either within the SVG or wherever you put the CSS style rules for your HTML document. -	In fact, you can use any SVG presentation attribute as a CSS property.
+					-	Inlining SVG is the only approach that lets you use CSS interactions (like :focus) and CSS animations on your SVG image (even in your regular stylesheet.)
+					-	You can make SVG markup into a hyperlink by wrapping it in an <a> element.
+
+				Cons
+					-	This method is only suitable if you're using the SVG in only one place. Duplication makes for resource-intensive maintenance.
+					-	Extra SVG code increases the size of your HTML file.
+					-	The browser cannot cache inline SVG as it would cache regular image assets, so pages that include the image will not load faster after the first page containing the image is loaded.
+					-	You may include fallback in a <foreignObject> element, but browsers that support SVG still download any fallback images. You need to weigh whether the extra overhead is really worthwhile, just to support obsolescent browsers.
+			}
+
+			-	iframe:
+			{
+				-	<iframe src="triangle.svg" width="500" height="500" sandbox>
+						<img src="triangle.png" alt="Triangle with three unequal sides" />
+					</iframe>
+
+				-	Not the best method to choose.
+				-	Cons
+					-	iframes do have a fallback mechanism, as you can see, but browsers only display the fallback if they lack support for iframes altogether.
+					-	Moreover, unless the SVG and your current webpage have the same origin, you cannot use JavaScript on your main webpage to manipulate the SVG.
+			}
+		}
+	}
 }
 
 Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
