@@ -157,6 +157,16 @@ Multimedia:
 			-	These are for decoration only and do not work with screen readers.
 		}
 	}
+
+	Audio Video:
+	{
+		video:
+		{
+			-	This requires a src same as in img tag.
+			-	controls attribute to provide the media control to the user.
+			-	The content inside the video tag will be used as fallback content in case the browser does not support video tag.
+		}
+	}
 }
 
 Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML/Document_and_website_structure
