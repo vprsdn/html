@@ -391,7 +391,7 @@ Possible issues:
 	-	Missing or improper attribute values.
 }
 
-SEO:
+SEO/Accessibilty:
 {
 	-	Proper headings and meta tags are important for good SEO ranking.
 	-	Search engines indexing your page consider the contents of headings as important keywords for influencing the page's search rankings. Without headings, your page will perform poorly in terms of SEO.
@@ -399,4 +399,11 @@ SEO:
 	-	Title and meta description are important.
 	-	Use track tag to give text content for audio and video.
 	-	Use caption tag inside tables.
+	-	Declare the lang in html tag. https://www.w3schools.com/tags/ref_language_codes.asp
+}
+
+Security:
+{
+	-	HTTP Status Messages: https://www.w3schools.com/tags/ref_httpmessages.asp
+	-	HTTP Request Methods: https://www.w3schools.com/tags/ref_httpmethods.asp
 }
