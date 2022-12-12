@@ -11,6 +11,7 @@ Head:
 	-	Meta attributes:
 	{
 		-	charset: specifies the character set that the document is permitted to use. utf-8 can handle/display pretty much any human language.
+		-	https://www.w3schools.com/html/html_charset.asp
 
 		-	Open graph properties, invented by facebook, helps in providing a richer metadata for websites. These properties are useful while sharing links on social sites like facebook. When shared it shows an image along with description for better experience.
 			-	https://ogp.me/
@@ -139,7 +140,7 @@ Text:
 
 Multimedia and embedding:
 {
-	Images:
+	Images: img, map, area, picture
 	{
 		-	Always host the images in the same place as the html or via a CDN.
 		-	Do not use links that are hosted by an external site.
@@ -155,6 +156,17 @@ Multimedia and embedding:
 		-	Background images:
 		{
 			-	These are for decoration only and do not work with screen readers.
+		}
+
+		-	Image maps:
+		{
+			-	This is used to redirect different parts of an image to different pages/links. Able to perform different actions depending on where in the image you click.
+			-	To create an image map you need an image, and some HTML code that describes the clickable areas.
+			-	The image is inserted using the <img> tag. The only difference from other images is that you must add a usemap attribute.
+			-	The usemap value starts with a hash tag # followed by the name of the image map, and is used to create a relationship between the image and the image map.
+			-	Then, add a <map> element. The <map> element is used to create an image map. The name attribute must have the same value as the <img>'s usemap attribute.
+			-	Define the clickable areas using "area" tag.
+			-	Set required href and/or on click functions.
 		}
 	}
 
@@ -312,8 +324,8 @@ Multimedia and embedding:
 	{
 		-	Use srcset and sizes attribute of img to provide different images for different screen sizes. (Did not work properly. Better to use the <picture> tag with multiple sources.)
 
-		-	Use picture tag with multiple sources for specific media width.
-		-	img tag is mandatory as default in this case.
+		-	Use "picture" tag with multiple sources for specific media width.
+		-	"img" tag is mandatory as default in this case.
 	}
 }
 
@@ -345,6 +357,20 @@ Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_H
 			-	section
 			-	aside
 		-	footer
+
+		-	<article>	Defines independent, self-contained content
+		-	<aside>	Defines content aside from the page content
+		-	<details>	Defines additional details that the user can view or hide
+		-	<figcaption>	Defines a caption for a <figure> element
+		-	<figure>	Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+		-	<footer>	Defines a footer for a document or section
+		-	<header>	Specifies a header for a document or section
+		-	<main>	Specifies the main content of a document
+		-	<mark>	Defines marked/highlighted text
+		-	<nav>	Defines navigation links
+		-	<section>	Defines a section in a document
+		-	<summary>	Defines a visible heading for a <details> element
+		-	<time>	Defines a date/time
 	}
 
 	-	Steps to structure a page:
@@ -355,6 +381,8 @@ Structure: https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_H
 		-	Sketch a sitemap depicting the workflow.
 	}
 }
+
+XHTML: A stricter version of html - https://www.w3schools.com/html/html_xhtml.asp
 
 Possible issues:
 {
