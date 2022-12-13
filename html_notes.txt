@@ -136,6 +136,12 @@ Text:
 		-	<time datetime="2016-01-20">20 January 2016</time>
 		-	This is used to signify the time and date in a machine readable format.
 	}
+
+	-	List:
+	{
+		-	The number of the ordered list items can be controlled using "start", "reversed" and "value" attributes.
+		-	Reference: https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_lists#controlling_list_counting
+	}
 }
 
 Multimedia and embedding:
