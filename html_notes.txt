@@ -413,3 +413,13 @@ Security:
 	-	HTTP Status Messages: https://www.w3schools.com/tags/ref_httpmessages.asp
 	-	HTTP Request Methods: https://www.w3schools.com/tags/ref_httpmethods.asp
 }
+
+Emmet:
+{
+	-	section>article.article-${Article $}*7
+	{
+		This generates a section with 7 articles with class "article-<0-7>" and with inner text "Article <0-7>"
+	}
+
+	-	Reference: https://docs.emmet.io/cheat-sheet/
+}
