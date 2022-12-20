@@ -423,3 +423,8 @@ Emmet:
 
 	-	Reference: https://docs.emmet.io/cheat-sheet/
 }
+
+Snippets:
+{
+	Display base64 image - <img src={`data:image/jpeg;base64,${data}`} /> 
+}
