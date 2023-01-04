@@ -10,6 +10,8 @@ Head:
 
 	-	Meta attributes:
 	{
+		-	viewport: `<meta name="viewport" content="width=device-width, initial-scale=1.0" />`
+			-	Sets device width as viewport width and sets initial zoom level to 1x.
 		-	charset: specifies the character set that the document is permitted to use. utf-8 can handle/display pretty much any human language.
 		-	https://www.w3schools.com/html/html_charset.asp
 
